@@ -14,6 +14,12 @@ TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engin
 Base.metadata.create_all(bind=engine)
 
 def override_get_db():
+    """
+    Sobrescribe la función get_db para usar la base de datos de prueba
+    
+    yield una sesión de la base de datos de prueba, que se cierra automáticamente
+    al finalizar el test
+    """
     db = TestingSessionLocal()
     try:
         yield db
