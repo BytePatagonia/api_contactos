@@ -14,8 +14,8 @@ API REST minimalista para gestión de contactos con FastAPI y PostgreSQL.
 
 ```bash
 # 1. Clonar repositorio
-git clone https://github.com/BytePatagonia/api-contactos.git
-cd api-contactos
+git clone https://github.com/BytePatagonia/api_contactos.git
+cd api_contactos
 
 # 2. Configurar variables de entorno
 cp .env.example .env
@@ -87,7 +87,7 @@ pytest tests/ -v
 ## 📁 Estructura
 
 ```
-api-contactos/
+api_contactos/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py          # 4 endpoints
@@ -110,9 +110,9 @@ api-contactos/
 
 Archivo `.env`:
 ```env
-POSTGRES_USER=contactsuser
-POSTGRES_PASSWORD=contactspass
-POSTGRES_DB=contactsdb
+POSTGRES_USER=xxxxx
+POSTGRES_PASSWORD=xxxxx
+POSTGRES_DB=xxxxx
 API_PORT=8000
 ```
 
@@ -127,8 +127,8 @@ GitHub Actions ejecuta automáticamente:
 ---
 
 ## 👨‍💻 Autor
-muñoz
-**Erika **  
+
+**Muñoz Erika **  
 ITS Cipolletti - Prácticas DevOps  
 Noviembre 2024
 
